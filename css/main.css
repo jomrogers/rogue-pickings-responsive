@@ -1,0 +1,194 @@
+/***** Mobile First Design *****/
+
+/* Base Styles */
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/***** Full Container *****/
+.container {
+	max-width: 1200px;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap; 
+}
+
+/***** Header & Text Styles *****/
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.875em;
+}
+h2 {
+	font-size: 1.125em;
+}
+h3 {
+	font-size: 0.75em;
+}
+
+p {
+	font-size: 0.875em;
+	line-height: 21px;
+    padding: 0 30px;
+}
+
+/*The widths are in a percentage!*/
+/***** Header & Nav Bar *****/
+header {
+	width: 100%;
+}
+
+header h1 {
+	border-bottom: 3px solid #77a466;
+	text-align: center;
+}
+header h1 span {
+	color: #77a466;
+}
+
+header nav ul li{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.875em;
+	padding: 10px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}	
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+/***** Welcome *****/
+.top-section {
+	border-bottom: 1px solid #eee;
+}
+
+.main-image img {
+	width: 100%;
+	border-top: 3px solid #77a466;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title h2 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 25px;
+}
+
+/***** Specials, Reviews & Contacts *****/
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	border-bottom: 1px solid #eee;
+}
+
+.section-one h3,
+.section-two h3,
+.section-three h3  {
+	padding: 10px 0;
+}
+
+.bottom-section {
+	display: flex;
+	flex-flow: row wrap;
+}	
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
+	padding: 2px 0;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 24px;
+	padding: 2px 0;
+}
+
+/*The widths are in a percentage!*/
+/***** Footer *****/
+footer {
+	margin: 20px auto;
+	text-align: center;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.875em;
+}
+
+/************  RESPONSIVE STYLES  *************/
+/***** Tablet *****/
+
+@media only screen and (min-width: 768px) {
+	/* Tablet styles here  */
+	.bottom-section {
+		display: flex;
+		flex-flow: row nowrap;
+	}	
+	.section-two,
+	.section-three {
+		border-left: 1px solid #eee;
+		padding: 0 20px;
+	}
+}
+
+/***** Monitor *****/
+@media only screen and (min-width: 1200px) {
+	/* Desktop styles here */
+	header {
+		display: flex;
+		align-items: baseline;
+	}
+	header h1 {
+		border-bottom: none;
+		width: 50%;
+		text-align: left;
+	}
+
+	header nav {
+		width: 50%;
+		display: flex;
+		justify-content: flex-end;
+	}
+	header nav ul {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	header nav ul li a{
+		padding: 0 15px;
+	}
+}
